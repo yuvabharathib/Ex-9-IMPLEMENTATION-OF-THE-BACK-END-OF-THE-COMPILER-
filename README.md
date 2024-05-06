@@ -11,12 +11,10 @@ To write a program to implement the back end of the compiler.
 5. Target code for the given statement is produced.
 6. Stop the program.
 # PROGRAM:
-Program: program.c file
 ```
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
-
 int main() {
     int i = 2, j = 0, k = 2, k1 = 0;
     char ip[10], kk[10];
@@ -30,7 +28,6 @@ int main() {
         printf("\nError in opening the file\n");
         return 1;
     }
-
     printf("\nStatement\tTarget Code\n\n");
     while (fscanf(fp, "%s", ip) != EOF) {
         printf("%s\tMOV %c,R%d SUB ", ip, ip[i + k], j);
